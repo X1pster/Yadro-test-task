@@ -6,7 +6,7 @@ SRC_URI = "file://yadro-hello.c"
 S = "${WORKDIR}/build"
 
 do_compile() {
-    ${CC} ${CFLAGS} ${LDFLAGS} ${WORKDIR}/yadro-hello.c -o ${S}/yadro-hello
+    ${CC} ${CFLAGS} ${LDFLAGS} ${WORKDIR}/yadro-hello.c -o ${C}yadro-hello
 }
 
 do_install() {

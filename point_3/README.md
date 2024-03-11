@@ -28,7 +28,7 @@
     S = "${WORKDIR}/build"
 
     do_compile() {
-        ${CC} ${CFLAGS} ${LDFLAGS} ${WORKDIR}/yadro-hello.c -o ${C}/yadro-hello
+        ${CC} ${CFLAGS} ${LDFLAGS} ${WORKDIR}/yadro-hello.c -o ${C}yadro-hello
     }
 
     do_install() {
@@ -53,3 +53,10 @@
 
 Получим следующий результат:
 ![Результат добавления слоя в образ ОС](images/yadro.jpg)
+
+***Мы можем выполнить аналогичные действия в контейнере Docker***
+
+Для этого необходимо выполнить действия, описанные в предыдущем пункте, а затем создать слой согласно описанному выше.
+
+Получим:
+![Резульат запуска программы yadro-hello](images/yadrohello.jpg)

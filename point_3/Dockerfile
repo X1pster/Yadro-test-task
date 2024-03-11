@@ -17,7 +17,7 @@ RUN groupadd -g 1000 yocto && useradd -u 1000 -g yocto -m yocto
 RUN echo 'yocto:yocto' | chpasswd
 RUN usermod -aG sudo yocto
 
-COPY . /home/yocto
+COPY . /home/yocto/
 
 USER yocto
 
