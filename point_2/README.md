@@ -59,3 +59,10 @@ runqemu qemux86-64/ slirp nographic
 В результате получим следующее:
 
 ![Резульат запуска образа в qemu](images/runqemu.jpg)
+
+### Для того, чтобы выполнить все эти действия автоматически:
+соберите образ docker при помощи команды
+```bash
+docker build -t yocto-image <path_to_Dockerfile_directory>
+```
+А затем выполните скрипт buildimage.sh, если хотите собрать образ и runimage.sh, если хотите запустить его.
